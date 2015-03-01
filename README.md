@@ -39,6 +39,12 @@ true
 
 > print(rat(5, 6) > rat(5, 4))
 false
+
+> print(rat.max(rat(5, 6), rat(5, 4)))
+5/4
+
+> print(rat.min(rat(5, 6), rat(5, 4)))
+5/6
 ```
 
 Converting to a `number` can be done with the `()` operator:

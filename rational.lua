@@ -156,6 +156,24 @@ rational.le = argcheck{
       end
 }
 
+rational.max = argcheck{
+   {name="a", type="rational.number"},
+   {name="b", type="rational.number"},
+   call =
+      function(a, b)
+         return a >= b and a or b
+      end
+}
+
+rational.min = argcheck{
+   {name="a", type="rational.number"},
+   {name="b", type="rational.number"},
+   call =
+      function(a, b)
+         return a <= b and a or b
+      end
+}
+
 mt = {
    __index = rational,
    __typename = "rational.number",
