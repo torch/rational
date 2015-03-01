@@ -13,5 +13,6 @@ assert(rat(5, 6) < rat(5, 4))
 assert(rat(5, 6) <= rat(5, 4))
 
 assert(tostring(rat(10, 12)) == '5/6')
+assert(tostring(rat(10, 2)) == '5')
 
 print('PASSED')

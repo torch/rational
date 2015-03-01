@@ -111,7 +111,11 @@ rational.tostring = argcheck{
    {name="a", type="rational.number"},
    call =
       function(a)
-         return string.format("%d/%d", a.n, a.d)
+         if a.d == 1 then
+            return string.format("%d", a.n)
+         else
+            return string.format("%d/%d", a.n, a.d)
+         end
       end
 }
 
